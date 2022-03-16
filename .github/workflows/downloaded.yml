@@ -1,14 +1,14 @@
 # This is a basic workflow to help you get started with Actions
 
-name: listen to "downloads" branch
+name: listen to "downloaded" branch
 
 # Controls when the workflow will run
 on:
-  # Triggers the workflow on push or pull request events but only for the main branch
+  # Triggers the workflow on push or pull request events but only for the specified branch here
   push:
-    branches: [ downloads ]
+    branches: [ downloaded ]
   pull_request:
-    branches: [ downloads ]
+    branches: [ downloaded ]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -27,7 +27,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: something got pushed to the "downloads" branch!
+        run: something got pushed to the "downloaded" branch!
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
